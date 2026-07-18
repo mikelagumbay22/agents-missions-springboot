@@ -1,0 +1,15 @@
+.site-footer {
+    background-color: #0f1023;
+    color: #b8b8d1;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site-footer .heart {
+    color: #e94560;
+}

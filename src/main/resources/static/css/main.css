@@ -1,0 +1,345 @@
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background-color: #f4f4f8;
+    color: #1a1a2e;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h2 {
+    border-bottom: 3px solid #e94560;
+    padding-bottom: 0.4rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: #0f3460;
+}
+
+/* Index page cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.index-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    text-decoration: none;
+    color: #1a1a2e;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.index-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.index-card-icon {
+    font-size: 2.5rem;
+}
+
+.index-card-title {
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+.index-card-text {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Agent grid + cards */
+.agent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.agent-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1a1a2e;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.agent-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.agent-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.agent-card-body {
+    padding: 0.85rem 1rem;
+}
+
+.agent-card-body h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #e94560;
+}
+
+.agent-card-name {
+    margin: 0.15rem 0;
+    font-weight: 600;
+}
+
+.agent-card-meta {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Details pages */
+.details-panel {
+    display: flex;
+    gap: 1.75rem;
+    align-items: flex-start;
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.agent-photo-large {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.details-fields {
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+}
+
+.details-panel .details-fields {
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 0;
+    flex: 1;
+    min-width: 220px;
+}
+
+.output_label {
+    font-weight: 700;
+    color: #0f3460;
+}
+
+.output_value {
+    color: #1a1a2e;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+table th {
+    background-color: #16213e;
+    color: white;
+    text-align: left;
+    padding: 0.75rem 1rem;
+}
+
+table td {
+    padding: 0.65rem 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Status badges */
+.badge-status {
+    display: inline-block;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: white;
+}
+
+.badge-active {
+    background-color: #2e8b57;
+}
+
+.badge-completed {
+    background-color: #555;
+}
+
+.badge-planning {
+    background-color: #d99a00;
+}
+
+/* Messages */
+.error {
+    color: #b00020;
+    font-weight: 600;
+}
+
+.warning {
+    color: #b06000;
+    font-weight: 600;
+}
+
+/* List page header with Add button */
+.list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.list-header h2 {
+    margin-bottom: 0;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.btn-primary:hover {
+    background-color: #c7304a;
+    color: white;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #eee;
+    color: #1a1a2e;
+    text-decoration: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #ddd;
+}
+
+.btn-link-danger {
+    background: none;
+    border: none;
+    color: #b00020;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 0;
+}
+
+.btn-link-danger:hover {
+    color: #7a0016;
+}
+
+/* Forms (Add Agent / Add Mission) */
+.form-panel {
+    background: white;
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    max-width: 560px;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-row label {
+    font-weight: 600;
+    color: #0f3460;
+    font-size: 0.9rem;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+/* Assign-mission / assign-agent inline form */
+.assign-form {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.assign-form select {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    min-width: 260px;
+}
+
+/* Agent card with a remove button beneath it (mission details page) */
+.agent-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.agent-card-wrapper form {
+    text-align: center;
+}

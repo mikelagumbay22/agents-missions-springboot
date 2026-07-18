@@ -2,21 +2,42 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../static/css/header.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/footer.css">
     <title>HeaderAndFooter</title>
 </head>
 <body>
-<header th:fragment="Header">
-    <h1>Course Data Demo</h1>
+<header th:fragment="header" class="site-header">
+    <div class="header-inner">
+        <img class="header-logo" th:src="@{/images/jmllogo.png}" alt="JM Logo">
+        <div>
+
+            <h1> Agents &amp; Missions</h1>
+            <p class="header-subtitle">Assignment 3 by John Lagumbay</p>
+        </div>
+    </div>
+    <nav class="site-nav">
+        <a th:href="@{/index}">Index</a>
+        <a th:href="@{/agents}">Agents</a>
+        <a th:href="@{/missions}">Missions</a>
+    </nav>
 </header>
 <main>
     Some content in the main tag.
 </main>
-<footer th:fragment="Footer">
-    Sheridan College&nbsp;&nbsp;<span class='hart'>&#9825;</span>&nbsp;&nbsp;
-    <span th:text="${#temporals.format(localDate, 'MMMM dd, yyyy')}">March 15, 2023</span>
+<footer th:fragment="Footer" class="site-footer">
+    <div class="site-nav">
+        <p>Sheridan College @2026</p>
+        <p>lagumbaj@sheridancollege.ca</p>
+        <p><span th:text="${#temporals.format(localDate, 'MMMM dd, yyyy')}">July 18, 2026</span></p>
+    </div>
+    <div class="site-nav">
+        <a href="https://linkedin.com/jmlagumbay" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://instagram.com/mikelagumbay" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://facebook.com/jmlagumbay" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    </div>
 </footer>
 </body>
 </html>
