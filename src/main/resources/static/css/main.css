@@ -63,7 +63,7 @@ a {
     font-size: 0.9rem;
 }
 
-/* Agent grid + cards */
+/* Agent grid amd cards */
 .agent-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -215,7 +215,6 @@ table td {
     font-weight: 600;
 }
 
-/* List page header with Add button */
 .list-header {
     display: flex;
     align-items: center;
@@ -276,7 +275,7 @@ table td {
     color: #7a0016;
 }
 
-/* Forms (Add Agent / Add Mission) */
+/* Forms */
 .form-panel {
     background: white;
     border-radius: 12px;
@@ -316,7 +315,7 @@ table td {
     margin-top: 0.5rem;
 }
 
-/* Assign-mission / assign-agent inline form */
+/* Assign mission form */
 .assign-form {
     display: flex;
     gap: 0.75rem;
@@ -333,7 +332,7 @@ table td {
     min-width: 260px;
 }
 
-/* Agent card with a remove button beneath it (mission details page) */
+/* Agent card with a remove button */
 .agent-card-wrapper {
     display: flex;
     flex-direction: column;
