@@ -22,7 +22,7 @@
 
 .site-header h1 {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     letter-spacing: 0.03em;
 }
 
@@ -52,8 +52,8 @@
 }
 
 .header-logo {
-    height: 48px;
-    width: 48px;
+    height: 70px;
+    width: 70px;
     object-fit: contain;
     border-radius: 8px;
 }
